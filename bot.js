@@ -8,7 +8,7 @@ client.on('ready', () => {
 });
 
 client.on('ready', () => {
-    client.user.setActivity(".help || .inv ",{type: 'PLAYING'})
+    client.user.setActivity(".Help |Tiger Bot ,",{type: 'PLAYING'})
 
 });
 
