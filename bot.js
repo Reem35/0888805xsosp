@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const moment = require("moment");
 const fs = require("fs");
 const client = new Discord.Client();
- const prefix = "-";
+ const prefix = ".";
 client.on('ready', () => {
     console.log('I am ready!');
 });
@@ -685,7 +685,7 @@ client.on('message', message => {
     });
 
   client.on('message', message => {
-if(message.content.startsWith("-slots")) {
+if(message.content.startsWith(".slots")) {
   let slot1 = ['🍏', '🍇', '🍒', '🍍', '🍅', '🍆', '🍑', '🍓'];
   let slots1 = `${slot1[Math.floor(Math.random() * slot1.length)]}`;
   let slots2 = `${slot1[Math.floor(Math.random() * slot1.length)]}`;
@@ -701,7 +701,7 @@ if(message.content.startsWith("-slots")) {
 });
 
 client.on('message', message => {
-var prefix = "-";
+var prefix = ".";
 
     if (message.author.id === client.user.id) return;
     if (message.guild) {
@@ -907,7 +907,7 @@ message.channel.send(`**Done || ${user.tag} Banned . :ballot_box_with_check: **`
  .setColor("RANDOM")
  .setThumbnail(client.user.avatarURL)
 .setTitle('Click Here .')
-.setURL('https://discordapp.com/oauth2/authorize?client_id=477008338048253983&permissions=8&scope=bot')
+.setURL('https://discordapp.com/api/oauth2/authorize?client_id=520350850795831305&permissions=8&scope=bot')
   message.channel.sendEmbed(embed);
    }
 }); 
